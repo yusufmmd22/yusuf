@@ -1,0 +1,8 @@
+--- # Hello everyone. I am about to write my first playbook. 
+- hosts: firstgroup
+  vars_prompt:
+  - name: yusuf
+    prompt: please select the package name
+  tasks:
+  - name: package {{ yusuf }} starting
+    action: service name=httpd {{ yusuf }} state=started

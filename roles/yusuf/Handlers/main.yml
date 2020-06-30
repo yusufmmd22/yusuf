@@ -1,0 +1,2 @@
+- name: service stop
+  action: service name=httpd state=stopped

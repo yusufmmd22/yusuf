@@ -1,0 +1,7 @@
+--- # This is my first outlining playbook code.
+- hosts: firstgroup
+  tasks:
+   - name: date&time for start of playbook
+     raw: /bin/date  > /home/yusuf/start.log
+   - name: date&time for end of playbook
+     raw: /bin/date  > /home/yusuf/end.log
